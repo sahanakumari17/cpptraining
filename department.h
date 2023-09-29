@@ -6,7 +6,7 @@
 enum class Department{
     IT,
     CS,
-    AI_ML#include <iostream>
+    AI_ML 
 
 
 
