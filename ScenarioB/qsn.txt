@@ -1,0 +1,11 @@
+create a new type with one n more sub catagory
+new data must be a type of any catagory
+
+in parent class is absreact 
+
+create Class Car with the foloowing attributes
+-CarType which should be SEDAN,SUV,HATCHBACK
+-calculateTax whose implemantaion is "return 10% of _price"
+
+
+//abstract class doesnt hv the body
