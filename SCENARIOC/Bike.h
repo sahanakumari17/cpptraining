@@ -3,6 +3,7 @@
 
 #include "BikeType.h"
 #include "Vehicle.h"
+#include <ostream>
 class Bike: public Vehicle
 {
 private:
@@ -20,7 +21,12 @@ public:
     ~Bike() {
         std::cout<<"Bike part of vehicle with id"<<id()<<"is destroyes"<<"\n";
     }
+
+    friend std::ostream &operator<<(std::ostream &os, const Bike &rhs);
+    
 };
+
+std::string DisplayEnum(const BikeType val);
 
 
 

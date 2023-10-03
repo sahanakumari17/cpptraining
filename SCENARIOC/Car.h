@@ -3,6 +3,7 @@
 
 #include "Vehicle.h"
 #include "CarType.h"
+#include <ostream>
 class Car:public Vehicle
 {
     private:
@@ -23,6 +24,11 @@ class Car:public Vehicle
             <<id()<<"id destroyed\n";
         }
         CarType carType() const {return _car_type_;}
+
+        friend std::ostream &operator<<(std::ostream &os, const Car &rhs);
+        
 };
+std::string DisplayEnum(const CarType val);
+
 
 #endif // CAR_H

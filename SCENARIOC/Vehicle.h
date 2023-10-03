@@ -28,6 +28,11 @@ public:
      float price() const { return _price; }
 
      VehicleType type() const { return __type; }
+
+     friend std::ostream &operator<<(std::ostream &os, const Vehicle &rhs);
+     
 };
+//it takes one enum value and prints its in string formm
+std::string DisplayEnum(const VehicleType value);
 
 #endif // VEHICLE_H
