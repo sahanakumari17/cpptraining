@@ -14,9 +14,9 @@ class Car:public Vehicle
         //3+1
         Car(std::string id,std::string brand,VehicleType ctype,CarType cType);
         //override if v miss the lie t will be usefull
-        float CalculateTax() override{
+        float CalculateTax() override;
 
-        }
+        
         
         ~Car(){
             std::cout<<"car part of vehicle with id:"

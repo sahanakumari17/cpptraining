@@ -12,6 +12,6 @@ Car::Car(std::string id, std::string brand, VehicleType type,CarType ctype) :Veh
 
 }
 float Car::CalculateTax(){
-
+return 0.1f*price();
 
 }
