@@ -17,7 +17,7 @@ public:
     virtual void Display(){
         std::cout<<"employee details calles\n";
     }
-    ~Employee() {
+    virtual ~Employee() {
         std::cout<<"employee destroyed\n";
     }
 };

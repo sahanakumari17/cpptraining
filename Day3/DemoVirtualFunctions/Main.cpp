@@ -16,4 +16,8 @@ int main(){
  //employee version of function called bcoz there is no Display in child class manager
     arr[0]->Display();
     arr[1]->Display();
+
+    //twice employee object only will destroyed
+    delete arr[0];
+    delete arr[1];
 }
