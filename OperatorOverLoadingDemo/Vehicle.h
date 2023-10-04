@@ -2,6 +2,7 @@
 #define VEHICLE_H
 #include<iostream>
 #include "VehicleType.h"
+#include "Vehicle.h"
 class Vehicle
 {
 private:
@@ -39,7 +40,10 @@ public:
 
         
    
+
     }
+
+     
 
     std::string id() const { return _id; }
     
@@ -51,7 +55,13 @@ public:
 
     VehicleType type() const { return _type; }
 
-    friend std::ostream &operator<<(std::ostream &os, const Vehicle &rhs);
+    //friend std::ostream &operator<<(std::ostream &os, const Vehicle &rhs);
+   friend std::ostream& operator<< (std::ostream& os,const Vehicle& obj)
+    {
+        os<<"Id :"<<obj._id<<"\t"<<"Brand: "<<obj._brand<<"\t"<<"price :"<<obj._price<<"\t"<<"Type :"
+        <<DisplayEnum(obj._type);
+        return os;
+    }
 };
 std::string DisplayEnum(const VehicleType val);
 
