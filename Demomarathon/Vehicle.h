@@ -29,6 +29,11 @@ public:
     float price() const { return _price; }
 
     VehicleType type() const { return _type; }
+
+    friend std::ostream &operator<<(std::ostream &os, const Vehicle &rhs);
+    
 };
+std::string DisplayEnum(const VehicleType val);
+
 
 #endif // VEHICLE_H
